@@ -5,6 +5,7 @@ login_payload = {
     "email": "user@example.com",
     "password": "string"
 }
+
 login_response = httpx.post("http://localhost:8000/api/v1/authentication/login",
                             json=login_payload)
 login_response_data = login_response.json()
